@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Smoked Coffee - Etheopian",
     image: "/images/coffee-bag.png",
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "2",
     name: "Smoked Coffee - Colombia",
     image: "/images/coffee-bag.png",
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: "3",
     name: "Smoked Coffee - Puerto Rico",
     image: "/images/coffee-bag.png",
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "4",
     name: "Smoked Coffee - Dominican Republic",
     image: "/images/coffee-bag.png",
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "5",
     name: "Smoked Coffee - South Africa",
     image: "/images/coffee-bag.png",
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: "6",
     name: "Smoked Coffee - Breakfast Blend",
     image: "/images/coffee-bag.png",
     description:
@@ -79,4 +73,4 @@ const products = [
   },
 ];
 
-module.exports = products;
+export default products;
