@@ -6,7 +6,7 @@ import Product from "../models/productModel.js";
 // @access -- Public
 const getProducts = asyncHandler(async (req, res) => {
   // Increase or decrease this variable to adjust page size
-  const pageSize = 2;
+  const pageSize = 8;
   const page = Number(req.query.pageNumber) || 1;
   const keyword = req.query.keyword
     ? {
