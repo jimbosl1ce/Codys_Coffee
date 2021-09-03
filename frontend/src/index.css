@@ -24,3 +24,8 @@ h3 {
 Button {
   margin-top: 1rem;
 }
+
+.fix-it {
+  display: flex;
+  gap: 1.5rem;
+}
