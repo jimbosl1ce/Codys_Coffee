@@ -1,4 +1,4 @@
-# Cody's Coffee - eCommerce app from scratch
+# StoreFront CMS - A Complete and Open Source eCommerce Solution
 
 [Live demo](https://jdh-contactkeeper.herokuapp.com/login)
 
