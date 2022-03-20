@@ -24,39 +24,55 @@ const HomeScreen = ({ match }) => {
     dispatch(listProducts(keyword, pageNumber));
   }, [dispatch, keyword, pageNumber]);
 
-  return (
-    <>
-      <Meta />
-      {!keyword ? (
-        <ProductCarousel />
-      ) : (
-        <Link to="/" className="btn btn-light">
-          Go Back
-        </Link>
-      )}
-      <h1>Latest Products</h1>
-      {loading ? (
-        <Loader />
-      ) : error ? (
-        <Message variant="danger">{error}</Message>
-      ) : (
-        <>
-          <Row>
-            {products.map((product) => (
-              <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-                <Product product={product} />
-              </Col>
-            ))}
-          </Row>
-          <Paginate
-            pages={pages}
-            page={page}
-            keyword={keyword ? keyword : ""}
-          />
-        </>
-      )}
-    </>
-  );
+  if (products.length) {
+    return (
+      <>
+        <Meta />
+        {!keyword ? (
+          <ProductCarousel />
+        ) : (
+          <Link to="/" className="btn btn-light">
+            Go Back
+          </Link>
+        )}
+        <h1>Latest Products</h1>
+        {loading ? (
+          <Loader />
+        ) : error ? (
+          <Message variant="danger">{error}</Message>
+        ) : (
+          <>
+            <Row>
+              {products.map((product) => (
+                <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+                  <Product product={product} />
+                </Col>
+              ))}
+            </Row>
+            <Paginate
+              pages={pages}
+              page={page}
+              keyword={keyword ? keyword : ""}
+            />
+          </>
+        )}
+      </>
+    );
+  } else {
+    return (
+      <>
+        <Meta />
+        {!keyword ? (
+          <ProductCarousel />
+        ) : (
+          <Link to="/" className="btn btn-light">
+            Go Back
+          </Link>
+        )}
+        <h1>No products found!</h1>
+      </>
+    );
+  }
 };
 
 export default HomeScreen;
