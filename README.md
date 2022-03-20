@@ -1,5 +1,10 @@
 # StoreFront CMS - A Complete and Open Source eCommerce Solution
 StoreFront is a free and open source alternative to Shopify for small business.
+
+As an admin, easily manage users, inventory, payments, and shipment status.
+
+As a user, search and order inventory, with easy credit card checkout capabilities provided by PayPal.
+
 ![storefrontCMS](https://user-images.githubusercontent.com/43115008/159177359-21aa77c7-739c-4964-adad-013bfce845f3.gif)
 
 [Live demo](https://young-beach-11599.herokuapp.com/)
