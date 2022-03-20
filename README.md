@@ -7,7 +7,7 @@ As a user, search and order inventory, with easy credit card checkout capabiliti
 
 ![storefrontCMS](https://user-images.githubusercontent.com/43115008/159177359-21aa77c7-739c-4964-adad-013bfce845f3.gif)
 
-[Live demo](https://young-beach-11599.herokuapp.com/)
+[Live demo](https://young-beach-11599.herokuapp.com/) - Admin credentials provided by default on Login screen.
 
 ## :heavy_check_mark: Features
 User Interface:
